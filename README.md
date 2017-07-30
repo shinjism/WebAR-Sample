@@ -1,2 +1,2 @@
 # WebAR-Sample
-A-FrameとAR.jsを使ったWebARサンプル
+A-Frameでお手軽WebAR
