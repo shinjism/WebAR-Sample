@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, WebVR! - A-Frame</title>
+    <meta name="description" content="Hello, WebVR! - A-Frame">
+    <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <img id="earth-jpg" src="https://cdn.glitch.com/f87d2f49-ea88-4c64-bf8b-9d0d5ba378e7%2Fear.jpg?1500397948909">
+      </a-assets>
+      <a-sphere position="0 0 0" rotation="0 0 0" scale="1 1 1" radius="1" src="#earth-jpg"></a-sphere>
+      <a-entity camera look-controls wasd-controls position="0 0 5"></a-entity>
+    </a-scene>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, WebVR! - A-Frame</title>
+    <meta name="description" content="Hello, WebVR! - A-Frame">
+    <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <img id="earth-jpg" src="https://cdn.glitch.com/f87d2f49-ea88-4c64-bf8b-9d0d5ba378e7%2Fear.jpg?1500397948909">
+        <a-asset-item id="duck-obj" src="https://cdn.glitch.com/f87d2f49-ea88-4c64-bf8b-9d0d5ba378e7%2Fduck.obj?1500398468207"></a-asset-item>
+        <a-asset-item id="duck-mtl" src="https://cdn.glitch.com/f87d2f49-ea88-4c64-bf8b-9d0d5ba378e7%2Fduck.mtl?1500398601114"></a-asset-item>
+      </a-assets>
+      <a-entity>
+        <a-animation attribute="rotation" from="0 0 0" to="0 360 0" dur="3000" easing="linear" repeat="true"></a-animation>
+        <a-sphere position="0 0 0" rotation="0 0 0" scale="1 1 1" radius="1" src="#earth-jpg"></a-sphere>
+        <a-obj-model position="2 0 0" rotation="0 0 0" scale="0.25 0.25 0.25" src="#duck-obj" mtl="#duck-mtl"></a-obj-model>
+      </a-entity>
+      <a-entity camera look-controls wasd-controls position="0 0 5"></a-entity>
+    </a-scene>
+  </body>
+</html>
